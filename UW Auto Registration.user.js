@@ -10,15 +10,15 @@
 
 (function() {
     'use strict';
-
+    
     function sleep(ms) {
         return new Promise(resolve => setTimeout(resolve, ms));
     }
 
     async function register() {
-        await sleep(1000);
+        await sleep(1000);      //Adjust the time interval here (milliseconds).
         document.getElementById("regform")[85].click();
-        await sleep(1000);
+        await sleep(1000);      //Adjust the time interval here (milliseconds).
     }
 
     register();
